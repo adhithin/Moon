@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Markdown Syntax"
-date:   2016-03-15
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+title:  "Week 0"
+date:   2022-03-09
+excerpt: "Matrix, Menu, & IntByReference"
 tag:
 - markdown 
 - syntax
@@ -14,54 +14,68 @@ comments: true
 
 ## HTML Elements
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
+Below is our coding exercepts 
 
-# Heading 1
+## Matrix 
 
-## Heading 2
+        for (int j = 0; j < matrix[x].length; j++){ // this is the line that doesn't go through the matrix that doesn't have everything
+           // nested for loops, this second one is the width of the matrix
 
-### Heading 3
+            if (matrix[i][j] == -1){
+                System.out.print("  ");
+            }
 
-#### Heading 4
+            else if (matrix[i][j] > 9){
+                String n = Integer.toHexString(matrix[i][j]);
+                System.out.print(n);
+                System.out.print(" ");
+            }
 
-##### Heading 5
+            else {
+                System.out.print(matrix[i][j]);
+                System.out.print(" ");
+            }
 
-###### Heading 6
 
-### Body text
+        }
+        System.out.println("");
+        x++;
+    }
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
+## Menu 
 
-![Smithsonian Image](https://mmistakes.github.io/minimal-mistakes/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
+## IntByReference 
 
-*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+    public IntByReference(int n){
+    this.value = n;
+    }
 
-HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+    public IntByReference swapToLowHighOrder(IntByReference x){
+    
 
-### Blockquotes
+     IntByReference temp = new IntByReference (value);
 
-> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+    if (x.value < value){
 
-## List Types
+        temp.value = value;
+        value = x.value;
+        x.value = temp.value;
 
-### Ordered Lists
+    }
 
-1. Item one
-   1. sub item one
-   2. sub item two
-   3. sub item three
-2. Item two
+    else {
 
-### Unordered Lists
+        return x;
+    }
 
-* Item one
-* Item two
-* Item three
+
+    return x;
+
+}
 
 ## Tables
 
-| Header1 | Header2 | Header3 |
+|Code Link| Commits |  Score  |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
 | cell4   | cell5   | cell6   |
@@ -72,15 +86,7 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 | Foot1   | Foot2   | Foot3
 {: rules="groups"}
 
-## Code Snippets
 
-{% highlight css %}
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
-{% endhighlight %}
 
 ## Buttons
 
@@ -96,17 +102,3 @@ Make any link standout more when applying the `.btn` class.
 <div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
 <div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
 
-## KBD
-
-You can also use `<kbd>` tag for keyboard buttons.
-
-{% highlight html %}
-<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>
-{% endhighlight %}
-
-Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midtown Maddness!!**
-
-## Notices
-
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
-{: .notice}
