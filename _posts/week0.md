@@ -4,11 +4,7 @@ title:  "Week 0"
 date:   2022-03-09
 excerpt: "Matrix, Menu, & IntByReference"
 tag:
-- markdown 
-- syntax
-- sample
-- test
-- jekyll
+
 comments: true
 ---
 
