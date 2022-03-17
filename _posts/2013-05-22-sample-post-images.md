@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "A Post with Images"
-date: 2013-05-22
-excerpt: "Examples and code for displaying images in posts."
+title: "Week One (1)"
+date: 2022-03-17
+excerpt: "LinkedLists, Queues, and Stacks."
 tags: [sample post, images, test]
 comments: true
 ---
