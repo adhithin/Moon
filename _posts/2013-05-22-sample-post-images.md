@@ -45,7 +45,7 @@ Below are some coding snippets.
 
 ## LinkedList Queue
 
-  ` public T delete() {
+     public T delete() {
         T data = this.queue.delete();
         this.count--;
         if (DEBUG) {
@@ -54,7 +54,7 @@ Below are some coding snippets.
         }
         printQueue(); // printing the linkedlist for challenge
         return data;
-    }`
+    }
 
 
 
