@@ -1,52 +1,112 @@
 ---
 layout: post
-title:  "MathJax Example"
-date:   2015-08-10
-excerpt: "MathJax Example for Moon Jekyll Theme."
-tag:
-- markdown 
-- mathjax
-- example
-- test
-- jekyll
+title: Week Two (2) 
+date: 2022-03-28
+excerpt: "Calculator Code, with Stacks, Reverse Polish Notation, and Tokens."
+tags: [sample post, code, highlighting]
 comments: true
 ---
 
-[MathJax](http://www.mathjax.org/) is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics `\[ ... \]`, and the other for inline mathematics `\( ... \)`.
+## Week 2 Code 
 
-## Usage
+Below are some coding snippets. 
 
-To enable MathJax support be sure Kramdown is your Markdown flavor of choice and MathJax is set to true in your `_config.yml` file.
+<div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
 
-~~~
-markdown: kramdown
-mathjax: true
-~~~
+## Reverse Polish Notation to Result 
 
-~~~
-Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
-\\[ \frac{1}{n^{2}} \\]
-~~~
+      private void rpnToResult()
+    {
 
-Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
-\\[ \frac{1}{n^{2}} \\]
+        Stack stack = new Stack();
 
-The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become `\\[ ... \\]` and `\\( ... \\)` for inline and block maths respectively.
-    
 
-$$
-\begin{align*}
-  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
-\end{align*}
-$$
+        for (String token : this.reverse_polish)
+        {
+
+            if (!isOperator(token))
+            {
+                stack.push(token);
+            }
+            else
+            {
+
+                Double operand1 = Double.valueOf( (String)stack.pop() );
+                Double operand0 = Double.valueOf( (String)stack.pop() );
+
+
+                Double result;
+                switch (token) {
+                    case "+":
+                        result = operand0 + operand1;
+                        break;
+                    case "-":
+                        result = operand0 - operand1;
+                        break;
+                    case "*":
+                        result = operand0 * operand1;
+                        break;
+                    case "/":
+                        result = operand0 / operand1;
+                        break;
+                    case "%":
+                        result = operand0 % operand1;
+                        break;
+                    case "^": //this is for power
+                        result = Math.pow(operand0, operand1);
+                        break;
+                    case "?": //this is for sqrt
+                        result = Math.sqrt(operand0);
+                        break;
+                    default:
+                        result = 0.0;
+                }
+
+
+                stack.push( String.valueOf( result ));
+            }
+        }
+
+        this.result = Double.valueOf((String)stack.pop());
+    }
+
+## Power 
+     // add the same, but for power in the driver 
+        System.out.println();
+
+        Calculator squareMath = new Calculator("3 ^ 2");
+        System.out.println("squareMath\n" + squareMath);
+        
+        // in the operators with precedence 
+        OPERATORS.put("^", 3);
+        
+        //the case 
+        case "^": // power
+        
+        //other case, using java.lang.Math; 
+         case "^": //this is for power
+            result = Math.pow(operand0, operand1);
+            break;
+
+## Extra Credit: Square Root 
+
+    // add the same, but for square root in the driver 
+        System.out.println();
+
+        Calculator squarerootMath = new Calculator("9 ? 0");
+        System.out.println("squarerootMath\n" + squarerootMath);
+        
+         // in the operators with precedence 
+        OPERATORS.put("?", 3);
+        
+        //the case 
+        case "?": // sqrt
+        
+        //other case, using java.lang.Math; 
+         case "?": //this is for sqrt
+            result = Math.sqrt(operand0);
+            break;
+
+
+
+
