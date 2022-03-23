@@ -3,7 +3,7 @@ layout: post
 title: Week Two (2) 
 date: 2022-03-28
 excerpt: "Calculator Code, with Stacks, Reverse Polish Notation, and Tokens."
-tags: [sample post, code, highlighting]
+tags:
 comments: true
 ---
 
