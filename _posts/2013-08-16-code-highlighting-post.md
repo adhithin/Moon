@@ -1,121 +1,112 @@
 ---
 layout: post
-title: Syntax Highlighting Post
-date: 2013-08-16
-excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
+title: Week Two (2) 
+date: 2022-03-28
+excerpt: "Calculator Code, with Stacks, Reverse Polish Notation, and Tokens."
 tags: [sample post, code, highlighting]
 comments: true
 ---
 
-Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
+## Week 2 Code 
 
-[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
+Below are some coding snippets. 
 
-### Highlighted Code Blocks
+<div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
 
-To modify styling and highlight colors edit `/assets/css/syntax.css`.
+## Reverse Polish Notation to Result 
 
-{% highlight css %}
-#container {
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
-}
-{% endhighlight %}
+      private void rpnToResult()
+    {
 
-{% highlight html %}
-{% raw %}
-<nav class="pagination" role="navigation">
-    {% if page.previous %}
-        <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-    {% endif %}
-    {% if page.next %}
-        <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-    {% endif %}
-</nav><!-- /.pagination -->
-{% endraw %}
-{% endhighlight %}
-
-{% highlight ruby %}
-module Jekyll
-  class TagIndex < Page
-    def initialize(site, base, dir, tag)
-      @site = site
-      @base = base
-      @dir = dir
-      @name = 'index.html'
-      self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
-      self.data['tag'] = tag
-      tag_title_prefix = site.config['tag_title_prefix'] || 'Tagged: '
-      tag_title_suffix = site.config['tag_title_suffix'] || '&#8211;'
-      self.data['title'] = "#{tag_title_prefix}#{tag}"
-      self.data['description'] = "An archive of posts tagged #{tag}."
-    end
-  end
-end
-{% endhighlight %}
+        Stack stack = new Stack();
 
 
-### Standard Code Block
+        for (String token : this.reverse_polish)
+        {
 
-    {% raw %}
-    <nav class="pagination" role="navigation">
-        {% if page.previous %}
-            <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-        {% endif %}
-        {% if page.next %}
-            <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-        {% endif %}
-    </nav><!-- /.pagination -->
-    {% endraw %}
+            if (!isOperator(token))
+            {
+                stack.push(token);
+            }
+            else
+            {
+
+                Double operand1 = Double.valueOf( (String)stack.pop() );
+                Double operand0 = Double.valueOf( (String)stack.pop() );
 
 
-### Fenced Code Blocks
+                Double result;
+                switch (token) {
+                    case "+":
+                        result = operand0 + operand1;
+                        break;
+                    case "-":
+                        result = operand0 - operand1;
+                        break;
+                    case "*":
+                        result = operand0 * operand1;
+                        break;
+                    case "/":
+                        result = operand0 / operand1;
+                        break;
+                    case "%":
+                        result = operand0 % operand1;
+                        break;
+                    case "^": //this is for power
+                        result = Math.pow(operand0, operand1);
+                        break;
+                    case "?": //this is for sqrt
+                        result = Math.sqrt(operand0);
+                        break;
+                    default:
+                        result = 0.0;
+                }
 
-To modify styling and highlight colors edit `/assets/css/syntax.css`. Line numbers and a few other things can be modified in `_config.yml`. Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for more information.
 
-~~~ css
-#container {
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
-}
-~~~
+                stack.push( String.valueOf( result ));
+            }
+        }
 
-~~~ html
-{% raw %}<nav class="pagination" role="navigation">
-    {% if page.previous %}
-        <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-    {% endif %}
-    {% if page.next %}
-        <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-    {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
-~~~
+        this.result = Double.valueOf((String)stack.pop());
+    }
 
-~~~ ruby
-module Jekyll
-  class TagIndex < Page
-    def initialize(site, base, dir, tag)
-      @site = site
-      @base = base
-      @dir = dir
-      @name = 'index.html'
-      self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
-      self.data['tag'] = tag
-      tag_title_prefix = site.config['tag_title_prefix'] || 'Tagged: '
-      tag_title_suffix = site.config['tag_title_suffix'] || '&#8211;'
-      self.data['title'] = "#{tag_title_prefix}#{tag}"
-      self.data['description'] = "An archive of posts tagged #{tag}."
-    end
-  end
-end
-~~~
+## Power 
+     // add the same, but for power in the driver 
+        System.out.println();
 
-### GitHub Gist Embed
+        Calculator squareMath = new Calculator("3 ^ 2");
+        System.out.println("squareMath\n" + squareMath);
+        
+        // in the operators with precedence 
+        OPERATORS.put("^", 3);
+        
+        //the case 
+        case "^": // power
+        
+        //other case, using java.lang.Math; 
+         case "^": //this is for power
+            result = Math.pow(operand0, operand1);
+            break;
 
-An example of a Gist embed below.
+## Extra Credit: Square Root 
 
-{% gist mmistakes/6589546 %}
+    // add the same, but for square root in the driver 
+        System.out.println();
+
+        Calculator squarerootMath = new Calculator("9 ? 0");
+        System.out.println("squarerootMath\n" + squarerootMath);
+        
+         // in the operators with precedence 
+        OPERATORS.put("?", 3);
+        
+        //the case 
+        case "?": // sqrt
+        
+        //other case, using java.lang.Math; 
+         case "?": //this is for sqrt
+            result = Math.sqrt(operand0);
+            break;
+
+
+
+
