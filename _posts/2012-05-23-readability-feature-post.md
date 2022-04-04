@@ -16,9 +16,13 @@ Below are some coding snippets.
 
 ## WHat is Big O Notation? What are the sort implementations? 
 
-### Big O Notations 
+### Big O Notation
+
+Big O notation is "mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity". It helps us determine the efficiency of a program. It's often used in math, but when 
 
 ### Bubble 
+
+
 
 ### Insertion 
 
