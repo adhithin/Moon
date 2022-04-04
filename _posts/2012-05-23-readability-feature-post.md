@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week 2"
+title:  "Week Three (3)"
 date:   2022-04-04
 excerpt: "Sorts"
 tag:
@@ -8,7 +8,7 @@ tag:
 comments: true
 ---
 
-## Week 4 Code 
+## Week 3 (Three) Code 
 
 Below are some coding snippets. 
 
