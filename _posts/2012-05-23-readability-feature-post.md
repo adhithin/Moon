@@ -14,9 +14,21 @@ Below are some coding snippets.
 
 <div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
 
-## Reflection 
+## WHat is Big O Notation? What are the sort implementations? 
+
+### Big O Notations 
+
+### Bubble 
+
+### Insertion 
+
+### Merge 
+
+### Select 
 
 I struggled with the first understanding, but then I ended up understanding, and I coded
+
+## Code Analysis 
 
 ## Bubble Sort 
 
