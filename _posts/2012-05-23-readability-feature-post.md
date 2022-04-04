@@ -1,46 +1,150 @@
 ---
 layout: post
-title: "Post with Image Feature"
-date: 2012-05-23
-excerpt: "A ton of text to test readability with image feature."
-tags: [sample post, readability, test, image, feature]
-feature: http://i.imgur.com/Ds6S7lJ.png
+title:  "Week 2"
+date:   2022-04-04
+excerpt: "Sorts"
+tag:
+
 comments: true
 ---
 
-Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
+## Week 4 Code 
 
-Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
+Below are some coding snippets. 
 
-## Cupidatat 90's lo-fi authentic try-hard
+<div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
 
-In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
+## Reflection 
 
-* Sartorial hoodie
-* Labore viral forage
-* Tote bag selvage
-* DIY exercitation et id ugh tumblr church-key
+I struggled with the first understanding, but then I ended up understanding, and I coded
 
-Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
+## Bubble Sort 
 
-Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven't heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney's Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.
+        public ArrayList<Integer> bubbleSort (ArrayList<Integer> arr) {
+       for (int i = 0; i < arr.size() - 1; i++) {
+           for (int j = arr.size() - 1; j > i; j--) {
+               if (arr.get(j - 1) > arr.get(j)) {
+                   //Swap
+                   int tmp = arr.get(j - 1);
+                   arr.set(j -1, arr.get(j));
+                   arr.set(j, tmp);
+               }
+           }
+       }
 
-## Forage occaecat cardigan qui
+       return arr;
+   }
 
-Fashion axe hella gastropub lo-fi kogi 90's aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.
+## Insertion Sort 
 
-> Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.
+     public ArrayList<Integer> insertSort(){
 
-Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney's next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney's sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.
+        Instant begin = Instant.now();    // time capture -- end
 
-## Hoodie Duis
+        for(int i=1;i<data.size();i++){
 
-Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90's pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.
 
-### Thundercats Ho!
+            int key = data.get(i);
 
-Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney's seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.
+            for(int j= i-1;j>=0;j--){
+                if(key < data.get(j)){
+                    // Shifting Each Element to its right as key is less than the existing element at current index
+                    data.set(j+1,data.get(j));
 
-Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney's selfies. Odd Future Banksy non authentic.
+                    // Special case scenario when all elements are less than key, so placing key value at 0th Position
+                    if(j==0){
+                        data.set(0, key);
+                    }
+                }
 
-Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.
+                else {
+                    // Putting Key value after element at current index as Key value is no more less than the existing element at current index
+                    data.set(j+1,key);
+                    break; // You need to break the loop to save un necessary iteration
+                }
+
+            }
+
+            for (Integer x : data){
+                System.out.print(x);
+            }
+
+        }
+
+## Merge Sort  
+
+    public ArrayList<Integer> merge() {
+            //Below is the mergedarray that will be sorted array Array[i-midIndex] , Array[(midIndex+1)-endIndex]
+            ArrayList<Integer> mergedSortedArray = new ArrayList<Integer>();
+
+            Instant s1 = Instant.now();    // time capture -- end
+
+            int leftIndex = data.get(0);
+            int rightIndex = data.get(data.size() - 1);
+            int midIndex = data.size()/2;
+            int endIndex = data.size() - 1;
+            int startIndex = 0;
+
+            while (leftIndex <= midIndex && rightIndex <= endIndex) {
+                if (data.get(leftIndex) <= data.get(rightIndex)) {
+                    mergedSortedArray.add(data.get(leftIndex));
+                    leftIndex++;
+                } else {
+                    mergedSortedArray.add(data.get(rightIndex));
+                    rightIndex++;
+                }
+            }
+
+            //Either of below while loop will execute
+            while (leftIndex <= midIndex) {
+                mergedSortedArray.add(data.get(leftIndex));
+                leftIndex++;
+            }
+
+            while (rightIndex <= endIndex) {
+                mergedSortedArray.add(data.get(rightIndex));
+                rightIndex++;
+            }
+
+            int i = 0;
+            int j = startIndex;
+            //Setting sorted array to original one
+            while (i < mergedSortedArray.size()) {
+                data.set(j, mergedSortedArray.get(i++));
+                j++;
+            }
+
+            Instant e1 = Instant.now();    // time capture -- end
+
+            this.mergeTime = Duration.between(s1, e1);
+
+            this.data = mergedSortedArray;
+
+
+
+            return data;
+        }
+
+
+## Select Sort
+
+
+    public ArrayList<Integer> selectSort(){
+
+        Instant b = Instant.now();  // starting the time
+
+        for (int i = 0; i < data.size(); i++) {
+            // find position of smallest num between (i + 1)th element and last element
+            int pos = i;
+            for (int j = i; j < data.size(); j++) {
+                if (data.get(j) < data.get(pos))
+                    pos = j;
+            }
+            // Swap min (smallest num) to current position on array
+            int min = data.get(pos);
+            data.set(pos, data.get(i));
+            data.set(i, min);
+        }
+
+
+
