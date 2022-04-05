@@ -14,25 +14,32 @@ Below are some coding snippets.
 
 <div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
 
-## WHat is Big O Notation? What are the sort implementations? 
+## What is Big O Notation? What are the sort implementations? 
 
 ### Big O Notation
 
-Big O notation is "mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity". It helps us determine the efficiency of a program. It's often used in math, but when 
+Big O notation is "mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity". It helps us determine the efficiency of a program. It's often used in math, but can be used in coding when we have to work and figure out the efficiency of certian algorithms and programs. 
 
 ### Bubble 
 
-
+Bubble Sort is a sort where we check two elements in an Array at a time. We look at the first two elements, and if the first element is bigger than the other, we swap them. If not, we do not swap them. This keeps iterating throughout the Array until the Array is sorted in order. 
 
 ### Insertion 
 
+Insertion Sort creates the array by inserting the element by order. It inserts one element at a time into the Array, while sorting the Array.
+
 ### Merge 
+
+Merge Sort is when we sort by merging and dividing. We split the Array into two's, and sort that way in pairs. 
 
 ### Select 
 
-I struggled with the first understanding, but then I ended up understanding, and I coded
+Select Sort selects elements in the list and orders them by pair, and then within the pair. 
+
 
 ## Code Analysis 
+
+The most efficient sort program was the Insertion Sort. 
 
 ## Bubble Sort 
 
