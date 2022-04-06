@@ -2,7 +2,7 @@
 layout: post
 title:  "Week Three (3)"
 date:   2022-04-04
-excerpt: "Sorts"
+excerpt: "Sorting with Bubble Sort, Merge Sort, Insert Sort, and Select Sort."
 tag:
 
 comments: true
@@ -39,7 +39,7 @@ Select Sort selects elements in the list and orders them by pair, and then withi
 
 ## Code Analysis 
 
-The most efficient sort program was the Insertion Sort. 
+The most efficient sort program was the Insertion Sort. The time that it took the bubble sort algorithm to sort the given list was 0.000149. The time that it took the insertion algorithm was 0.000002, and it took the Merge sort 0.000004. The select sort took 0.000023. Out of these, the fastest was the insertion sort. This indicates that the insertion sort was the most fastest, and thus in our definition, the most efficient program to sort through the list. 
 
 ## Bubble Sort 
 
