@@ -12,7 +12,8 @@ comments: true
 
 Below are some coding snippets. 
 
-<div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
+
+github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
 
 ## What is Big O Notation? What are the sort implementations? 
 
@@ -42,6 +43,18 @@ Select Sort selects elements in the list and orders them by pair, and then withi
 ## Code Analysis 
 
 ### Graph 
+
+#### Graph of efficiency for bubble sort: 
+<img width="1332" alt="Screen Shot 2022-04-06 at 9 12 58 AM" src="https://user-images.githubusercontent.com/71796291/162019940-337df17d-d2cd-43b8-a01d-4b6e58f8e50d.png">
+
+#### Graph of efficiency for merge sort: 
+<img width="1413" alt="Screen Shot 2022-04-06 at 9 16 20 AM" src="https://user-images.githubusercontent.com/71796291/162020557-f08eb0d4-450b-4fd0-ab07-862cd1f19488.png">
+
+#### Graph of efficiency for select sort: 
+<img width="1341" alt="Screen Shot 2022-04-06 at 9 15 12 AM" src="https://user-images.githubusercontent.com/71796291/162020376-7dc971c4-880d-4e28-83b9-de7f432304e5.png">
+
+#### Graph of efficiency for insertion sort: 
+<img width="1311" alt="Screen Shot 2022-04-06 at 9 17 42 AM" src="https://user-images.githubusercontent.com/71796291/162020836-6365a255-a99a-4ad9-9840-86c3efcede2a.png">
 
 ### Data Table 
 
