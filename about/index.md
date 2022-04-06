@@ -16,10 +16,10 @@ comments: false
 
 ## Weeks 
 
-<a href="https://adhithin.github.io//video-post/"><b>Week 0</b></a>: Matrix, Menu, & IntByReference
-<a href="https://adhithin.github.io//sample-post-images/"><b>Week 1</b></a>: LinkedLists, Queues, and Stacks.
-<a href="https://adhithin.github.io//mathjax-example/"><b>Week 2</b></a>: Calculator Code, with Stacks, Reverse Polish Notation, and Tokens.
-<a href="https://adhithin.github.io//readability-feature-post/"><b>Week 3</b></a>: Sorts
+### <a href="https://adhithin.github.io//video-post/"><b>Week 0</b></a>: Matrix, Menu, & IntByReference
+### <a href="https://adhithin.github.io//sample-post-images/"><b>Week 1</b></a>: LinkedLists, Queues, and Stacks.
+### <a href="https://adhithin.github.io//mathjax-example/"><b>Week 2</b></a>: Calculator Code, with Stacks, Reverse Polish Notation, and Tokens.
+### <a href="https://adhithin.github.io//readability-feature-post/"><b>Week 3</b></a>: Sorts
 
 ## Other 
 
