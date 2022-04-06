@@ -37,7 +37,22 @@ Merge Sort is when we sort by merging and dividing. We split the Array into two'
 Select Sort selects elements in the list and orders them by pair, and then within the pair. 
 
 
+
+
 ## Code Analysis 
+
+### Graph 
+
+### Data Table 
+
+| Sort      | Speed |
+| ----------- | ----------- |
+| Bubble     |   0.000149  |
+| Merge   | 0.000004       |
+| Insertion   | 0.000002       |
+| Select   | 0.000023      |
+
+### Analysis 
 
 The most efficient sort program was the Insertion Sort. The time that it took the bubble sort algorithm to sort the given list was 0.000149. The time that it took the insertion algorithm was 0.000002, and it took the Merge sort 0.000004. The select sort took 0.000023. Out of these, the fastest was the insertion sort. This indicates that the insertion sort was the most fastest, and thus in our definition, the most efficient program to sort through the list. 
 
