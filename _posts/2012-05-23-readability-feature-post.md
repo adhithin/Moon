@@ -8,14 +8,15 @@ tag:
 comments: true
 ---
 
-## Week 3 (Three) Code 
+## Week 3 (Three) Overview 
 
-Below are some coding snippets. 
+|  <a href="#topic" class="btn btn-info"> Description of Code </a> |   <a href="#codeanalysis" class="btn btn-info"> Code Analysis </a>  |  <a href="#code" class="btn btn-info"> Code Snippets </a> | 
+|---|----|---|
 
 
-github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
+<div> <a href="https://adhithin.github.io//posts/" class="btn btn-info"> Click to Go Back </a></div>
 
-## What is Big O Notation? What are the sort implementations? 
+## <div> <a id="topic">  What is Big O Notation? What are the sort implementations? </a></div>
 
 ### Big O Notation
 
@@ -40,7 +41,7 @@ Select Sort selects elements in the list and orders them by pair, and then withi
 
 
 
-## Code Analysis 
+## <div> <a id="codeanalysis"> Code Analysis </a></div> 
 
 ### Graph 
 
@@ -69,7 +70,9 @@ Select Sort selects elements in the list and orders them by pair, and then withi
 
 The most efficient sort program was the Insertion Sort. The time that it took the bubble sort algorithm to sort the given list was 0.000149. The time that it took the insertion algorithm was 0.000002, and it took the Merge sort 0.000004. The select sort took 0.000023. Out of these, the fastest was the insertion sort. This indicates that the insertion sort was the most fastest, and thus in our definition, the most efficient program to sort through the list. 
 
-## Bubble Sort 
+##  <div> <a id="code"> Coding Snippets </a></div> 
+
+### Bubble Sort 
 
         public ArrayList<Integer> bubbleSort (ArrayList<Integer> arr) {
        for (int i = 0; i < arr.size() - 1; i++) {
@@ -86,7 +89,7 @@ The most efficient sort program was the Insertion Sort. The time that it took th
        return arr;
    }
 
-## Insertion Sort 
+### Insertion Sort 
 
      public ArrayList<Integer> insertSort(){
 
@@ -122,7 +125,7 @@ The most efficient sort program was the Insertion Sort. The time that it took th
 
         }
 
-## Merge Sort  
+### Merge Sort  
 
     public ArrayList<Integer> merge() {
             //Below is the mergedarray that will be sorted array Array[i-midIndex] , Array[(midIndex+1)-endIndex]
@@ -177,7 +180,7 @@ The most efficient sort program was the Insertion Sort. The time that it took th
         }
 
 
-## Select Sort
+### Select Sort
 
 
     public ArrayList<Integer> selectSort(){
