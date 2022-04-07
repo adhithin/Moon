@@ -10,7 +10,7 @@ comments: true
 
 ## Week 3 (Three) Overview 
 
-|  <a href="#topic" class="btn btn-info"> Description of Code </a> |   <a href="#codeanalysis" class="btn btn-info"> Code Analysis </a>  |  <a href="#code" class="btn btn-info"> Code Snippets </a> | 
+|  <a href="#topic"> Description of Code </a> |   <a href="#codeanalysis" > Code Analysis </a>  |  <a href="#code"> Code Snippets </a> | 
 |---|----|---|
 
 
