@@ -28,6 +28,14 @@ comments: false
 - [ ] My recommendation is to build video in small parts 15-30 seconds and finish a key subject.  Then put the final Video together with Video editing or Youtube playlists.
 - [ ] Use Voice or Captions. Make sure you have a clear plan before you start each segment of video.  Try to minimize transitions while recording.  If you are wiggling mouse and scrolling you are probably wasting time.
 
+#### Video Order and Menu 
+
+1. Week 0 (40 sec)
+2. Week 1 (40 sec)
+3. Week 2 (40 sec)
+4. Week 3 (40 sec)
+5. Extra (40 sec)
+
 ### Individual Coding:
 - [x] GitHub Pages showing key learnings and challenges conquered from Tech Talks and Assignments.
 - [ ] GitHub commits you have made, show GitHub insights into your code commits.
