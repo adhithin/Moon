@@ -18,15 +18,15 @@ comments: false
 
 ### Quality of work
 
-- [x] It has been discussed, make GitHub pages as center point of all your work.  It is required to use GitHub pages on your Data Structures work.
-- [ ] Make a review ticket.  Show tangible link(s) to final work:  GitHub pages, Replit, Review Ticket(s), TimeBox, or other methods you have used to organize work is advisable. 
-- [ ] Between GitHub pages and Review Ticket, use some sort of self organization and evaluation check list show how you have completed each of the data structures challenges, refer to Coding Review below for guideline.
+- [x] [It has been discussed, make GitHub pages as center point of all your work.](https://adhithin.github.io//)  It is required to use GitHub pages on your Data Structures work.
+- [x] [Make a review ticket.](https://github.com/adhithin/adi-personal/issues/5) Show tangible link(s) to final work:  GitHub pages, Replit, Review Ticket(s), TimeBox, or other methods you have used to organize work is advisable. 
+- [x] Between GitHub pages and Review Ticket, use some sort of self organization and evaluation check list show how you have completed each of the data structures challenges, refer to Coding Review below for guideline.
 
 ### Video 2 minutes: show all work, quality suggested as follows
 
-- [ ] Make sure you cover everything from Data Structures unit, but create your own order and organization to  help you optimize.   
-- [ ] My recommendation is to build video in small parts 15-30 seconds and finish a key subject.  Then put the final Video together with Video editing or Youtube playlists.
-- [ ] Use Voice or Captions. Make sure you have a clear plan before you start each segment of video.  Try to minimize transitions while recording.  If you are wiggling mouse and scrolling you are probably wasting time.
+- [x] Make sure you cover everything from Data Structures unit, but create your own order and organization to  help you optimize.   
+- [x] My recommendation is to build video in small parts 15-30 seconds and finish a key subject.  Then put the final Video together with Video editing or Youtube playlists.
+- [x] Use Voice or Captions. Make sure you have a clear plan before you start each segment of video.  Try to minimize transitions while recording.  If you are wiggling mouse and scrolling you are probably wasting time.
 
 #### Video Order and Menu 
 
@@ -37,14 +37,14 @@ comments: false
 5. Extra (40 sec)
 
 ### Individual Coding:
-- [x] GitHub Pages showing key learnings and challenges conquered from Tech Talks and Assignments.
-- [ ] GitHub commits you have made, show GitHub insights into your code commits.
-- [ ] Show Code running on Replit as well as IntelliJ.  Prove that they are synchronized through GitHub
-- [ ] Discuss Menu review illustrating use of Arrays and Runnable/PolyMorphism: show runtime, code organization, code and comments
-- [ ] Discuss Queue and Stack: show runtime, code organization, code and comments
-- [ ] Discuss Calculator: show runtime, code organization, code and comments
-- [ ] Discuss Sorts and Analysis: show runtime, code organization, code and comments
-- [ ] Highlight analysis you have performed on Sort, show key data / stats you analyzed from your runtime
+- [x] [GitHub Pages showing key learnings and challenges conquered from Tech Talks and Assignments.](https://adhithin.github.io//)
+- [x] [GitHub commits you have made, show GitHub insights into your code commits.](https://github.com/adhithin/adi-personal/commits/main)
+- [x] [Show Code running on Replit as well as IntelliJ.  Prove that they are synchronized through GitHub](https://replit.com/@AdhithiNarayana/adi-personal#.replit)
+- [ ] [Discuss Menu](https://adhithin.github.io//sample-post-images/) review illustrating use of Arrays and Runnable/PolyMorphism: show runtime, code organization, code and comments
+- [ ] Discuss [Queue and Stack](https://adhithin.github.io//sample-post-images/): show runtime, code organization, code and comments
+- [ ] Discuss [Calculator](https://adhithin.github.io//mathjax-example/): show runtime, code organization, code and comments
+- [ ] Discuss [Sorts and Analysis](https://adhithin.github.io//readability-feature-post/): show runtime, code organization, code and comments
+- [ ] [Highlight analysis you have performed on Sort, show key data / stats you analyzed from your runtime](https://adhithin.github.io//readability-feature-post/)
 - [ ] Show Crossover contribution:  Highlight work you did in crossover project: show their Replit runtime, code commit(s) in their GitHub repo
 
 
