@@ -10,8 +10,8 @@ comments: true
 
 ## Week 3 (Three) Overview 
 
-|  <a href="#topic"> Description of Code </a> |   <a href="#codeanalysis" > Code Analysis </a>  |  <a href="#code"> Code Snippets </a> | 
-|---|----|---|
+ <a href="#topic"> Description of Code </a>   <a href="#codeanalysis" > Code Analysis </a>   <a href="#code"> Code Snippets </a>
+
 
 
 <div> <a href="https://adhithin.github.io//posts/" class="btn btn-info"> Click to Go Back </a></div>
