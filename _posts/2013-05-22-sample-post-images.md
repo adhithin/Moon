@@ -9,13 +9,21 @@ comments: true
 
 ## Week 1 Code 
 
-|  <a href="#topic" class="btn btn-info"> Description of Code </a> |   <a href="#codeanalysis" class="btn btn-info"> Code Analysis </a>  |  <a href="#code" class="btn btn-info"> Code Snippets </a> | 
+|  <a href="#topic" class="btn btn-info"> Description of Code </a> |  <a href="#code" class="btn btn-info"> Code Snippets </a> | 
 
 
 
-<div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
+## <div> <a id="topic">  Description Of Code + Key Learnings </a></div>
 
-## LinkedList Stack 
+### Key Learnings: 
+
+#### A stack is like a stack of plates. When you add, it adds to the top, and when you take an object away from the stack, it takes it from the top. 
+
+#### A linked list is a list of objects linked to each other in a queue. 
+
+## <div> <a id="code"> Code Snippets </a></div>
+
+### LinkedList Stack 
 
         public void emptyStack()
     {
@@ -30,7 +38,7 @@ comments: true
     }
 
 
-## LinkedList Combine 
+### LinkedList Combine 
 
  
 
@@ -45,7 +53,7 @@ comments: true
         }
 
 
-## LinkedList Queue
+### LinkedList Queue
 
      public T delete() {
         T data = this.queue.delete();
