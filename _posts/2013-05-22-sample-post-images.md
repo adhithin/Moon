@@ -9,7 +9,9 @@ comments: true
 
 ## Week 1 Code 
 
-Below are some coding snippets. 
+|  <a href="#topic" class="btn btn-info"> Description of Code </a> |   <a href="#codeanalysis" class="btn btn-info"> Code Analysis </a>  |  <a href="#code" class="btn btn-info"> Code Snippets </a> | 
+
+
 
 <div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
 
