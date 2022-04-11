@@ -42,6 +42,29 @@ Below are some coding snippets.
 
 ## Menu 
 
+public Menu(MenuRow[] rows) {
+        int j = 0;
+        for (MenuRow row : rows) {
+            // Create hashmap 
+            menu.put(j++, new MenuRow(row.getTitle(), row.getAction()));
+        }
+    }
+
+    // getter to get row from Menu
+    public MenuRow get(int j) {
+        return menu.get(j);
+    }
+
+    // use for loop to iterate through the rows to print each one
+    public void print() {
+        for (Map.Entry<Integer, MenuRow> pair : menu.entrySet()) {
+            System.out.println(pair.getKey() + ": " + pair.getValue().getTitle()); //gets the key for the menu and prints number 
+        }
+    }
+
+
+
+
 ## IntByReference 
 
     public IntByReference(int n){
