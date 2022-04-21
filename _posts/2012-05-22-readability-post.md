@@ -18,8 +18,7 @@ comments: false
 | unit 5 | 
 | unit 6 | 
 
-
- ### <a id="#u1" > Faculty Lecture 1: Primitive Data Types in Java </a>
+### <a id="#u1" > Faculty Lecture 1: Primitive Data Types in Java </a>
 
 
 What is an actual computer program 
