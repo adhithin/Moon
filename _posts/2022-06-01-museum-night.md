@@ -10,89 +10,33 @@ comments: true
 
 ## Night at the museum 
 
-Below are some coding snippets. 
+Here are the projects that we saw and learned from.
 
 <div markdown="0"><a href="https://adhithin.github.io/posts/" class="btn btn-info"> Click to Go Back</a></div>
 
-## Matrix 
+### Project 1
 
-        for (int j = 0; j < matrix[x].length; j++){ // this is the line that doesn't go through the matrix that doesn't have everything
-           // nested for loops, this second one is the width of the matrix
+#### What was it about? 
 
-            if (matrix[i][j] == -1){
-                System.out.print("  ");
-            }
+#### What did I learn? 
 
-            else if (matrix[i][j] > 9){
-                String n = Integer.toHexString(matrix[i][j]);
-                System.out.print(n);
-                System.out.print(" ");
-            }
+#### Pictures! 
 
-            else {
-                System.out.print(matrix[i][j]);
-                System.out.print(" ");
-            }
+### Project 2 
 
+#### What was it about? 
 
-        }
-        System.out.println("");
-        x++;
-    }
+#### What did I learn? 
 
-## Menu 
+#### Pictures! 
 
-public Menu(MenuRow[] rows) {
-        int j = 0;
-        for (MenuRow row : rows) {
-            // Create hashmap 
-            menu.put(j++, new MenuRow(row.getTitle(), row.getAction()));
-        }
-    }
+### Project 3 
 
-    // getter to get row from Menu
-    public MenuRow get(int j) {
-        return menu.get(j);
-    }
+#### What was it about? 
 
-    // use for loop to iterate through the rows to print each one
-    public void print() {
-        for (Map.Entry<Integer, MenuRow> pair : menu.entrySet()) {
-            System.out.println(pair.getKey() + ": " + pair.getValue().getTitle()); //gets the key for the menu and prints number 
-        }
-    }
+#### What did I learn? 
 
-
-
-
-## IntByReference 
-
-    public IntByReference(int n){
-    this.value = n;
-    }
-
-    public IntByReference swapToLowHighOrder(IntByReference x){
-    
-
-     IntByReference temp = new IntByReference (value);
-
-    if (x.value < value){
-
-        temp.value = value;
-        value = x.value;
-        x.value = temp.value;
-
-    }
-
-    else {
-
-        return x;
-    }
-
-
-    return x;
-
-}
+#### Pictures! 
 
 
 
