@@ -24,6 +24,8 @@ comments: true
 
 - Database: worked on databases, learned how they work, CRUD (in java this time). 
 
+Commit History: https://github.com/adritac-tech/SwanSonsOfLiberty1/commits?author=adhithin
+
 ### Overall Reflection: 
 
 ## Life Skills 
