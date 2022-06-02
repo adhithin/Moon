@@ -20,9 +20,15 @@ Here are the projects that we saw and learned from.
 
 Our project had a lot of people coming to see it, and a lot of APUSH students seemed quite interested in the project. We showed the audience the database of notes, how it worked, as well as how to create an account, and our security features. 
 
-Here's our commercial: 
+Here's our commercial, which I worked on: 
 
 https://drive.google.com/file/d/1i74eHyZ8tkwT3xHamIvKVqQvJzmQFisw/view?usp=sharing 
+
+### Individual Work 
+
+I tried to work on the front end, but it didn't come together in time for n@tm. 
+
+Worked on uploads. 
 
 
 ### Project 1 
