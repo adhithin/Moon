@@ -20,6 +20,10 @@ Here are the projects that we saw and learned from.
 
 Our project had a lot of people coming to see it, and a lot of APUSH students seemed quite interested in the project. We showed the audience the database of notes, how it worked, as well as how to create an account, and our security features. 
 
+Here's our commercial: 
+
+https://drive.google.com/file/d/1i74eHyZ8tkwT3xHamIvKVqQvJzmQFisw/view?usp=sharing 
+
 
 ### Project 1 
 
@@ -30,7 +34,7 @@ Ridhima, Kira, Rini, and Natasha worked on a project to display night at the mus
 
 #### What did I learn? 
 
-They seemed to have a lot of good security features, and definitely understood their upload. 
+They seemed to have a lot of good security features, and definitely understood their upload technicals. They took a look at file size, and what pictures they could upload. This was interesting to see, since our project focused on uploading pdf files. I was also interested in their display and security features, since there might need to be a restriction on who can upload pictures on the site. 
 
 #### Pictures! 
 
